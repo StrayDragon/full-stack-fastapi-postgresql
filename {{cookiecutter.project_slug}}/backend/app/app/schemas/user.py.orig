@@ -12,8 +12,13 @@ class UserBase(BaseModel):
 
 
 # Properties to receive via API on creation
+<<<<<<< HEAD
+class UserCreate(UserBaseInDB):
+    email: EmailStr
+=======
 class UserCreate(UserBase):
     email: str
+>>>>>>> acfddcbf75e78c4236f450fa19b8c1d2d7e1f602
     password: str
 
 

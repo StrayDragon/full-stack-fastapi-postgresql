@@ -3,8 +3,13 @@ from fastapi.encoders import jsonable_encoder
 from app import crud
 from app.core.security import get_password_hash, verify_password
 from app.db.session import db_session
+<<<<<<< HEAD
+from app.schemas.user import UserCreate
+from app.tests.utils.utils import random_lower_string, random_email
+=======
 from app.schemas.user import UserCreate, UserUpdate
 from app.tests.utils.utils import random_lower_string
+>>>>>>> acfddcbf75e78c4236f450fa19b8c1d2d7e1f602
 
 
 def test_create_user():
