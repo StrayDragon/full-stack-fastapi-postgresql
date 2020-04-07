@@ -1,8 +1,12 @@
 FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7
 
+<<<<<<< HEAD
+RUN pip install celery~=4.3 passlib[bcrypt] tenacity requests emails "fastapi>=0.47.0" "uvicorn>=0.11.1" gunicorn pyjwt python-multipart email_validator jinja2 psycopg2-binary alembic SQLAlchemy email_validator
+=======
 ENV PIP_INDEX_URL={{cookiecutter.pip_mirror_url}}
 
 RUN pip install celery~=4.3 passlib[bcrypt] tenacity requests emails "fastapi>=0.47.0" "uvicorn>=0.11.1" gunicorn pyjwt python-multipart email_validator jinja2 psycopg2-binary alembic SQLAlchemy
+>>>>>>> 9abda169cf66e43e909cb16773d70b089a9356e3
 
 # For development, Jupyter remote kernel, Hydrogen
 # Using inside the container:
